@@ -1,0 +1,10 @@
+$git init ==>to initialise the git in terminal
+$git config --global user.email=""
+$git config --global user.name=""
+$git add .  -->this is to add all files in present directory 
+$git commit - m "Name "
+$git remote add "path"
+$git push -u origin master--> master-branch
+&git branch newbranch
+$git checkout newbranch
+$git push -u origin newbranch
