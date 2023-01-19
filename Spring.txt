@@ -1,0 +1,34 @@
+POM.xml ==> Its a MAven POM.xml used to build the oroject(WHich includes the dependences for applications)
+Adding class Path Dependencies==> Spring boot provide No.of "starter" dependencies Ex: "spring-boot-starter-parent" inside the parent section
+                               which have default maven jar files and also dependency-maangement( Where we can Omit the "version" tag)
+
+                               For developing Spring boot web application we add "Spring-boot-starter-web": " It adds the Tomcat and the Spring MVC"  dependency to pom file.
+
+                              mvn dependency:tree ==> disply the tree structure of dependencies
+
+
+Executable Jars: (Fat Jars): archives containing compiled classes and all jar dependencies reqired to run the code. 
+
+Java doesn't provide a standered way to load nested jar files. Which can be a Problematic to distribute a self-contained application.
+To solve it , We use Uber jars . Which pack all the classes in a application's dependencies in to a single archive 
+Probles:
+      Hard to identified which liberes are from applications.
+      same filenames can exits from diffrent applications.
+
+Spring Boot takes Diffrent approach: which directly nests the jars.
+
+--> To create a executable jar, need to add "spring-boot-maven-plugin"
+Annotaions ==>
+
+@RestController :
+                SteroType ANnotation(hints to readers) as it a spring web @Controller spring consider during handling the webRequests.
+
+@RequestMapping : 
+                It provides the routing information, any http request with / should mapped to the home method.
+                It tells the spring render the resulting string directly to the caller
+
+(@RestController and @RequestMapping are spring MVC annotations not restricted to the Spring boot)
+
+@SpringBootApplication : meta ANnotation. It combines (@springBootConfiguration , @EnableAutoConfiguration and @CompoundScan)
+                        
+                        @EnableAutoConfiguration: Which tells the spring that to configure automatically based on the dependencies I added in pom file.
