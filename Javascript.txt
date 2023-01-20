@@ -1,0 +1,149 @@
+About JS:
+    JS is a cross-platform,OOScriptingLanguage, used to make webpages more interactive().Like COmplext Animations , Clickable buttons , pop-ups ...
+    more advance serverside version of JS.
+
+    JS have standered Librery of Object like Array,Date,Math and core elements like operators,controle structures and statements.
+    ClinetSite JS : using objects to controle a browser and its DOM(Document Object Model) Ex:
+    Extension allows application to place elements on HTML form and respont to user events like mouse clicks , input,page navigate.
+    JS resembles the JAVA but "it don't have the static typing and strong type checking".It follows most of the java exppression syntax , naming conventions and basic controle flow that sits rename from LiveScript to the JavaScript
+
+    JS have prototype-based-object model insted of java class-based Object Model.These prototype based model provides the dynamic inheritence.It supports functions without any special declarative reqirements.It depends on HyperTalkand Dbase
+    
+
+    tl+shift+i -- to open webconsole
+
+    //About syntax
+    
+    example of Identifiers : rak99,siva,_van,$pice
+
+    const name = "rakesh";
+
+    3-kinds of variable declarations
+    1> var: optional initilizing to a value
+    2> let: declares a block-scoped,local-variable,initilizing to a value.
+    3> const:nblock-scope, Read-Only named constant
+
+    We can Declare variables in 2 ways:
+           var: 
+               var x = 5;
+               In this syntax, can be used in both local and global variables
+           const or let:
+                let x = 5;
+                used to declare block-scoped local variable
+
+Variable Scope:
+   Global Scope: Default mode for all code runing in script mode.
+   Module Scope: Scope of code in module only.
+   Function Scope: scope created to a function.
+   block Scope: scope created based on curly braces
+
+//Example for block scope
+   if (Math.random() > 0.5) {
+  const y = 5;
+}
+console.log(y);  // ReferenceError: y is not defined
+
+variables created with var are not block-scoped, but only local to the function (or global scope)
+
+//example 
+if (true) {
+  var x = 5;
+}
+console.log(x);  // x is 5
+
+var-declared variables are hoisted, meaning you can refer to the variable anywhere in its scope
+//Example
+
+console.log(x === undefined); // true
+var x = 3;
+
+(function() {
+  console.log(x); // undefined
+  var x = 'local value';
+})();
+
+7-DataTypes that are primitive:
+
+Boolean,null,undefined,Number,BifINt,String,Symbol 
+//dynamically typed, 
+let answer = 44;
+answer = 'Thanks for all the fish!';
+
+//Operations
+
+let x,y,z;
+x="hi my numbers is :"+33 //hi my numberis : 33
+y= 43+"is my number";     // 43 is my number
+z= '24'+5                 //245
+
+//other operators
+z='2'*2                    //4
+x='5'-1                    //4
+
+//Convert Strings to Number
+parseInt()
+parseFloat()
+
+parseInt('101' , 2)  //5
+parseInt('111',2)    //?
+
+   Other-way is (+)use before string int.
+   (+'1.1')+(+'1.2')               //2.3
+
+
+   Literals in JS:
+      1 Array Literals:
+               It is a List with 0 or more expressions.
+               const a = ['one','two','three'];
+               //if two commas between any elements in list refer to empty 
+               const a = ['one',,'two']
+               //if extra , is at end it get ignored
+               const a = ['a','ab',];
+               //if extra , at front of list it count a elemnt at postion 
+               cont a = [,'a','ab','ac',]       ===  a[0]=empty,a[1]=a,a[2]=ab,a[3]=ac  
+               //explicitly declares as emoty
+               const a = ['a',/* empty */,'b'];
+
+      2 Boolean Literals:
+                2-values : true,False
+      3 Numeric Literals:
+                 Integers,float base-10
+
+                 Float Literals:
+                              unsigned decimal Integer,Decimal point , fraction,exponent
+                 Integer Literals:
+                                 Integer and BigInt can use as decimal(0o) base-10,base-16(0-9,a-f,A-F),base-2(0b)(0,1),base-8(0-7)
+
+                                 Example:
+                                 0, 117, 123456789123456789n             (decimal, base 10)
+                                 015, 0001, 0o777777777777n              (octal, base 8)
+                                 0x1123, 0x00111, 0x123456789ABCDEFn     (hexadecimal, "hex" or base 16)
+                                 0b11, 0b0011, 0b11101001010101010101n   (binary, base 2)
+      4 Object Literals:
+                0 or more pairs as ({})
+
+                Example:
+
+                const sale = 'toto';
+                function carType(name){
+                    if(name === 'Honda') return name;
+                    if name === Honda ? name : "sorry not found ${name}.";
+
+                }
+
+                const o = {myCar:'local',getCar:carType('Honda'),special: sale};
+                console.log(o.myCar);             //local
+                console.log(o.special);           //tot
+                console.log(o.getCar);
+
+
+                //nested object Literals
+                 
+                const o = { alpha:{1:'a',2:'b'},beta:'name'};
+                console.log(o.alpha.1)            //a
+                console.log(o.beta)               //name
+
+                
+      5 RegExp Literals
+      6 String Literals
+
