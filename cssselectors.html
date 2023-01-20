@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    .cont1{
+        background-color: blue;
+        text-align: right;
+        font-style: italic;
+        font-size: 10;
+    }
+
+    #val{
+        background-color: green;
+        text-align: right;
+        font-size: 20;
+        font-style: oblique;
+    }
+
+    body{
+        background-color: bisque;
+    }
+</style>
+<body>
+
+<h1 align="center">Table Tag </h1>
+
+<table border="5">
+    <thead >
+        <tr>
+            <td >Colum1</td>
+            <td>Colum2</td>
+            <td colspan="2" bgcolor="red" >Column3</td>
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr bgcolor="pink">
+            <td rowspan="2">cell1</td>
+            <td colspan="2">cell2</td>
+            <td>cell3</td>
+        </tr>
+        <tr>
+            <td>cell4</td>
+            <td>cell5</td>
+            <td>cell6</td>
+        </tr>
+
+    </tbody>
+</table>
+
+<h2>The styling is applied</h2>
+<p>Hi, I am Rakesh Reddy. TOday I am explaining the concept of Selectors and how they are help in designing the webpage.<br>
+And Mostly I want you to understand the core funtional of the Selectors like:
+<hr>
+<select align="center">
+    <option>universial Selector</option>
+    <option>Class Selector</option>
+    <option>ID selector</option>
+
+</select>
+<input type="radio" name="Select" value="1">Universal Selector
+<input type="checkbox" name="Select" value="2">Class selector
+<input type="button" name="select" value="3">Id Selector  
+<hr>
+
+
+</p>
+
+<div class="cont1">
+    <h3 align="left">Universal Selector</h3>
+    <dl>
+        <dt>Universal Selector</dt>
+        <dd>
+            THis Universal Selector is to apply stlying to all tags inside a specific page.<em>Example:</em> if we add all the <br> tags like headers and anchers and we select the 
+            Universal Selector the it apply to all these specified tages in the page.
+        </dd>
+    </dl>
+
+
+</div>
+
+
+<div id="val" >
+    <dl>
+        <dt>Class Selector</dt>
+        <dd>This is a specal selecter that is used to make specific block with attribute as Class. So, We use the class name to style the specific block.</dd>       
+    </dl>
+
+    <p>This passage is clearly display the use of <span>class Attribute</span> in div tag. 
+        <br>
+    Mostly, THe major diffrence between the class and the ID tag is.
+    <br> 
+    <b>The Class</b> attribute can be used <b>multiple</b> time in a single Tag.
+<br> 
+The <b>ID attribute </b> is used to <span>Unique</span> to the tag</p>
+    
+
+</div>
+
+<div>
+
+</div>
+
+    
+</body>
+</html>
